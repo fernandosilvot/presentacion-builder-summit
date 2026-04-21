@@ -398,6 +398,11 @@ body.presentation-mode .slide-container.active { display:flex; }
     display:none; z-index:999; backdrop-filter:blur(16px);
 }
 .speaker-notes.vis { display:block; }
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:10000;display:none;align-items:center;justify-content:center;cursor:zoom-out;backdrop-filter:blur(8px);}
+.lightbox.open{display:flex;}
+.lightbox img{max-width:92vw;max-height:92vh;object-fit:contain;border-radius:12px;box-shadow:0 0 60px rgba(0,0,0,.6);}
+.img-slot.has-img{cursor:zoom-in;}
     </style>
 </head>
 <body>
@@ -886,6 +891,11 @@ body.presentation-mode .slide-container.active { display:flex; }
 <div class="speaker-notes" id="sn"></div>
 <div class="keyboard-hint" id="kh"><kbd>→</kbd> Siguiente | <kbd>←</kbd> Anterior | <kbd>F</kbd> Fullscreen | <kbd>N</kbd> Notas</div>
 
+<div class="lightbox" id="lb" onclick="this.classList.remove('open')"><img id="lbImg"></div>
+<script>
+document.querySelectorAll('.img-slot.has-img img').forEach(i=>i.addEventListener('click',e=>{e.stopPropagation();document.getElementById('lbImg').src=i.src;document.getElementById('lb').classList.add('open')}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('lb').classList.remove('open')});
+</script>
 <script>
 let c=0,nv=false;
 const S=document.querySelectorAll('.slide-container'),T=S.length;
