@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+body { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; line-height: 1.5; margin: 40px; color: #222; }
+h1 { color: #FF9900; border-bottom: 2px solid #FF9900; padding-bottom: 5px; font-size: 16pt; margin-top: 30px; }
+h2 { color: #232F3E; font-size: 13pt; margin-top: 20px; }
+h3 { font-size: 11pt; margin-top: 10px; }
+code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-size: 10pt; }
+pre { background: #1a2332; color: #e0e0e0; padding: 12px; border-radius: 6px; font-size: 9pt; overflow-x: auto; }
+pre code { background: none; color: #e0e0e0; }
+hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
+blockquote { border-left: 3px solid #FF9900; padding-left: 12px; color: #555; }
+strong { color: #232F3E; }
+</style></head><body><h1>GUION COMPLETO — Charla Meta-Rock</h1>
+<h2>Nerdearla Chile 2026 · Viernes 17 de abril · 12:00 hrs</h2>
+<h2>25 min + 5 min Q&amp;A · 23 slides</h2>
+<hr />
+<h1>SLIDE 1 — Cover (0:00 — 0:15)</h1>
+<p><strong>Contenido:</strong> "Construyendo un Asistente IA Multimodal en Meta Glasses" / Fernando Silva T / AWS Community Builder</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Hola a todos, bienvenidos. Soy Fernando Silva, desarrollador de Chile y AWS Community Builder. Hoy les voy a mostrar algo que construí y que me tiene bastante emocionado."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Charla nivel 100, no asumir conocimientos previos de AWS</li>
+<li>15 segundos máximo en este slide</li>
+</ul>
+<hr />
+<h1>SLIDE 2 — Sobre mí (0:15 — 0:30)</h1>
+<p><strong>Contenido:</strong> Dos columnas. Izquierda: datos personales. Derecha: "Construyo aplicaciones de IA y arquitecturas con servicios cloud"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Rápidamente: soy desarrollador y AWS Community Builder desde Chile. Me dedico a construir aplicaciones de inteligencia artificial usando servicios en la nube. Y hoy les traigo un proyecto que combina lentes inteligentes con IA."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>AWS Community Builder: programa de AWS que reconoce a desarrolladores que comparten conocimiento</li>
+<li>No extenderse, 15 segundos</li>
+</ul>
+<hr />
+<h1>SLIDE 3 — Agenda (0:30 — 0:50)</h1>
+<p><strong>Contenido:</strong> 4 bloques: Contexto + Desafíos técnicos + Demo grabada + Lecciones</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"El plan es simple. Primero les explico las piezas: qué son estos lentes y qué es Amazon Bedrock. Después vemos cuatro desafíos técnicos que tuve que resolver, con código real. Les muestro una demo grabada del proyecto funcionando. Y cerramos con lecciones. Vamos."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>4 bloques en vez de 5 (se quitó demo inicial separada)</li>
+<li>Timing: Contexto ~5min, Desafíos ~10min, Demo ~3min, Cierre ~3min</li>
+</ul>
+<hr />
+<h1>SLIDE 4 — Hook: F.R.I.D.A.Y. (0:50 — 1:30)</h1>
+<p><strong>Contenido:</strong> "¿Se acuerdan de F.R.I.D.A.Y., la asistente de Tony Stark? Yo la construí, se llama Viernes"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p><em>(Pausa. Mirar a la audiencia.)</em></p>
+<p>"¿Cuántos acá han visto Iron Man?"</p>
+<p><em>(Esperar manos.)</em></p>
+<p>"¿Se acuerdan de F.R.I.D.A.Y., la asistente de Tony Stark? La que le decía qué tenía al frente, le respondía preguntas, todo a través de sus lentes..."</p>
+<p><em>(Pausa dramática.)</em></p>
+<p>"Bueno... yo la construí. Y se llama Viernes."</p>
+<p><em>(Si tienes los lentes: ponértelos en este momento.)</em></p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>F.R.I.D.A.Y. = Female Replacement Intelligent Digital Assistant Youth, asistente de Iron Man después de Jarvis</li>
+<li>El nombre "Viernes" es la traducción literal, funciona como wake word en español</li>
+<li>Este es el momento de conexión emocional más importante de la charla</li>
+</ul>
+<hr />
+<h1>SLIDE 5 — Divider: Las piezas del rompecabezas (1:30 — 1:40)</h1>
+<p><strong>Contenido:</strong> "Meta Glasses · Amazon Bedrock · IA Multimodal"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Para entender cómo funciona, necesitamos hablar de tres cosas: los lentes, un servicio de Amazon llamado Bedrock, y qué significa inteligencia artificial multimodal."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Transición de 10 segundos, no demorarse</li>
+</ul>
+<hr />
+<h1>SLIDE 6 — Meta Smart Glasses (1:40 — 2:40)</h1>
+<p><strong>Contenido:</strong> Imagen de los lentes + Cámara 12MP, Micrófono, Parlantes, Bluetooth, SDK DAT</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Primero: los Meta Smart Glasses. Se ven como lentes de sol normales, pero tienen una computadora adentro."</p>
+<p><em>(Señalar la imagen o mostrar los lentes físicos)</em></p>
+<p>"Tienen una cámara de 12 megapíxeles — como la de un teléfono. Tienen micrófono para escucharte. Tienen parlantes para hablarte. Y se conectan a tu teléfono por Bluetooth, como unos audífonos."</p>
+<p>"Lo interesante es que Meta, la empresa detrás de Facebook, liberó un kit de herramientas para desarrolladores. Se llama DAT SDK. Eso nos permite crear nuestras propias apps que acceden a la cámara de los lentes."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Meta Wearables DAT SDK v0.4.0 (Device Access Toolkit)</li>
+<li>Requiere Meta AI app v254+ instalada y lentes emparejados</li>
+<li>El SDK entrega video en formato I420 (YUV planar) a 720p/30fps</li>
+<li>Conexión BLE para control + BTC para datos de video</li>
+<li>Firmware v20+ requerido en los lentes</li>
+<li>Android 12+ (API 31+)</li>
+</ul>
+<hr />
+<h1>SLIDE 7 — ¿Qué es Amazon Bedrock? (2:40 — 4:00)</h1>
+<p><strong>Contenido:</strong> Imagen con diagrama de modelos + "El menú de modelos de IA" + bullets</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Segundo: Amazon Bedrock. Les voy a explicar con una analogía."</p>
+<p>"Imaginen que van a un restaurant. El restaurant tiene un menú con distintos platos de distintos chefs. Ustedes eligen qué quieren, lo piden, y el restaurant se encarga de cocinarlo y servirlo."</p>
+<p><em>(Señalar el diagrama)</em></p>
+<p>"Bedrock es exactamente eso, pero con inteligencia artificial. Es un servicio de Amazon donde tú eliges qué modelo de IA quieres usar. Hay modelos de Anthropic, de Meta, de Amazon, de Mistral... cada uno con sus fortalezas."</p>
+<p>"Tú no necesitas instalar nada. No necesitas tener computadores potentes. No necesitas ser experto en inteligencia artificial. Solo eliges del menú, haces una llamada, y pagas por lo que usas."</p>
+<p>"Yo elegí Claude Sonnet 4.5 de Anthropic, porque es muy bueno analizando imágenes. Y lo mejor: si mañana quiero cambiar a otro modelo, cambio UNA línea de código. El resto queda igual."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Amazon Bedrock: servicio fully managed de AWS para modelos fundacionales</li>
+<li>Converse API: API unificada que abstrae las diferencias entre modelos</li>
+<li>Modelo usado: <code>us.anthropic.claude-sonnet-4-5-20250929-v1:0</code> (cross-region inference)</li>
+<li>Pricing: ~$3/M input tokens, ~$15/M output tokens para Sonnet 4.5</li>
+<li>Una imagen de 30KB ≈ ~1000 tokens ≈ ~$0.003 por request</li>
+<li>No requiere provisionar endpoints ni gestionar infraestructura</li>
+<li>AWS SDK for Kotlin <code>bedrockruntime</code> v1.6.12</li>
+</ul>
+<hr />
+<h1>SLIDE 8 — ¿Qué es IA Multimodal? (4:00 — 4:40)</h1>
+<p><strong>Contenido:</strong> Imagen diagrama + "Texto + Imagen → Respuesta"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Tercero: IA multimodal. La mayoría de los chatbots que ustedes conocen — ChatGPT, por ejemplo — funcionan con texto. Tú escribes algo y te responden con texto."</p>
+<p>"Pero un modelo multimodal puede entender texto E imágenes al mismo tiempo. Es como la diferencia entre hablar por teléfono y hacer una videollamada. En la videollamada la otra persona puede VER lo que tú ves."</p>
+<p>"Eso es lo que hace posible que Viernes 'vea' a través de los lentes. Le mando la foto de lo que estoy viendo junto con mi pregunta, y la IA analiza las dos cosas juntas."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Multimodal = múltiples modalidades de input (texto, imagen, audio, video)</li>
+<li>Claude Sonnet 4.5 soporta imagen + texto en un solo request via ContentBlock</li>
+<li>La imagen se envía como JPEG en base64 dentro de <code>ContentBlock.Image(ImageBlock)</code></li>
+<li>El modelo decide internamente si la imagen es relevante para la respuesta</li>
+<li>Max tokens de respuesta configurado en 300 para mantener respuestas concisas</li>
+</ul>
+<hr />
+<h1>SLIDE 9 — Arquitectura (4:40 — 5:30)</h1>
+<p><strong>Contenido:</strong> Imagen diagrama 4 pasos + "Lentes → App → Bedrock → Voz"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Y la arquitectura — cómo está armado todo — es así de simple. Son cuatro pasos."</p>
+<p><em>(Señalar cada caja en el diagrama)</em></p>
+<p>"Uno: los lentes capturan lo que estoy viendo y lo mandan a mi teléfono por Bluetooth. Dos: la app en el teléfono toma una foto de lo que ven los lentes y la junta con mi pregunta. Tres: manda todo a Amazon Bedrock, donde Claude lo analiza. Y cuatro: la respuesta vuelve al teléfono y se lee en voz alta."</p>
+<p>"No hay nada más. No hay servidores intermedios, no hay infraestructura compleja. La app habla directo con Bedrock."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Arquitectura directa: Android → Bedrock (sin API Gateway, Lambda, ni backend)</li>
+<li>AWS SDK for Kotlin se ejecuta directamente en el dispositivo Android</li>
+<li>Credenciales via BuildConfig (inyectadas desde local.properties en build time)</li>
+<li>Comunicación HTTPS directa al endpoint de Bedrock</li>
+<li>Latencia end-to-end: 2-3 segundos (bottleneck es la inferencia en Bedrock)</li>
+</ul>
+<hr />
+<h1>SLIDE 10 — Divider: Cuatro desafíos técnicos (5:30 — 5:40)</h1>
+<p><strong>Contenido:</strong> "Código · Decisiones · Resultados"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Ok, suena simple cuando lo explico así. Pero construirlo tuvo desafíos reales. Les voy a mostrar los cuatro problemas más interesantes que tuve que resolver, con el código real."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Cada desafío sigue el patrón: Problema → Decisión → Código → Resultado</li>
+<li>Los 4 desafíos cubren: voz, video, IA, y orquestación</li>
+</ul>
+<hr />
+<h1>SLIDE 11 — Desafío 1: Wake Word gratis (5:40 — 7:00)</h1>
+<p><strong>Contenido:</strong> Imagen flujo + "Oye Viernes sin pagar un peso" + SpeechRecognizer con resultados parciales</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Primer desafío: necesitaba que la app estuviera escuchando todo el tiempo, esperando que yo dijera 'Oye Viernes'. Como cuando le dices 'Hey Siri' al iPhone o 'Ok Google' al teléfono."</p>
+<p>"El problema es que las herramientas profesionales para hacer esto cuestan plata. Hay empresas que cobran por detectar palabras de activación."</p>
+<p>"Mi solución: resulta que Android ya tiene reconocimiento de voz gratis incluido. El truco está en pedirle que me mande resultados parciales. ¿Qué significa eso? Que mientras tú hablas, Android va mandando lo que CREE que estás diciendo, antes de que termines la frase."</p>
+<p>"Entonces si yo digo 'Oye Viernes, ¿qué hora es?', Android primero manda 'oye', después 'oye vier...', después 'oye viernes'. Y cuando mi app detecta 'oye viernes' en esos resultados parciales... ¡se activa!"</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Android <code>SpeechRecognizer</code> con <code>EXTRA_PARTIAL_RESULTS = true</code></li>
+<li>Wake words: "oye viernes", "hey friday", "oye biernes", "hey viernes"</li>
+<li>Variantes incluidas por errores comunes del reconocedor (V→B)</li>
+<li>Modo pasivo: escucha continua, solo revisa parciales</li>
+<li>Modo activo: post-wake word, captura transcript completo</li>
+<li>Error 7 (<code>ERROR_NO_MATCH</code>): se reinicia automáticamente</li>
+<li>Latencia de detección: ~500ms</li>
+<li>Trade-off: mayor consumo de batería (~15%/hora) vs cero costo de SDK</li>
+</ul>
+<hr />
+<h1>SLIDE 12 — Código: Wake Word (7:00 — 8:30)</h1>
+<p><strong>Contenido:</strong> Imagen con screenshot de código + "Sin SDKs. Sin costos. Android nativo."</p>
+<h3>🎤 Guion para principiantes</h3>
+<p><em>(Ir lento, dar tiempo para leer)</em></p>
+<p>"Y el código para hacer esto es sorprendentemente corto. Miren:"</p>
+<p>"Primero le digo a Android: 'mándame resultados parciales'. Esa es la línea clave, el truco de todo esto."</p>
+<p>"Después, cada vez que Android me manda un resultado parcial, lo reviso: ¿contiene 'oye viernes'? Si sí, activo al asistente."</p>
+<p>"Son básicamente 5 líneas de código. Sin instalar nada extra, sin pagar licencias, sin servidores. Solo usando lo que Android ya trae."</p>
+<p>"Y un detalle que me gusta: incluí la variante 'oye biernes' con B, porque el reconocedor de voz a veces confunde la V con la B. Siempre piensen en cómo puede fallar el usuario real."</p>
+<h3>🔧 Info técnica</h3>
+<pre><code class="language-kotlin">// Modo pasivo
+putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
+
+// En onPartialResults:
+val text = partialResults?.getStringArrayList(
+    SpeechRecognizer.RESULTS_RECOGNITION
+)?.firstOrNull()?.lowercase()
+if (WAKE_WORDS.any { text.contains(it) }) {
+    onWakeWord()
+}
+</code></pre>
+<ul>
+<li><code>RecognitionListener.onPartialResults()</code> se llama múltiples veces durante el habla</li>
+<li><code>onResults()</code> se usa en modo activo para capturar el transcript completo</li>
+<li>El recognizer se destruye y recrea entre sesiones para evitar memory leaks</li>
+<li>Handler con delay de 300ms entre restart para que el recognizer anterior se libere</li>
+</ul>
+<hr />
+<h1>SLIDE 13 — Desafío 2: Video → Imagen (8:30 — 9:30)</h1>
+<p><strong>Contenido:</strong> Imagen pipeline + "De ~2MB a ~30KB"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Segundo desafío: los lentes graban video todo el tiempo, ¿cierto? Pero yo no necesito mandarle un video completo a la IA. Sería como mandarle a un amigo un video de 10 minutos cuando le puedes mandar una sola foto y preguntarle '¿qué ves acá?'."</p>
+<p>"Eso es exactamente lo que hago. En el momento que tú preguntas, tomo UNA sola foto del video."</p>
+<p>"El problema es que esa foto sale en un formato que la IA no entiende — es como si estuviera en un idioma raro. Entonces la convierto a JPEG, que es el formato de foto que todos conocemos."</p>
+<p>"Y antes de enviarla, la achico. No necesito una foto de 10 megapíxeles para que la IA entienda qué hay en la imagen. La reduzco a algo bien liviano, como 30 kilobytes. Es como comprimir una maleta grande en una mochila."</p>
+<p>"Resultado: en vez de mandar un video pesado de 2 megabytes, mando una fotito de 30 kilobytes. Más rápido, más barato, y la IA entiende igual."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Meta DAT SDK entrega frames en I420 (YUV planar): Y plane + U plane + V plane</li>
+<li>Pipeline: I420 → NV21 (intercalar U/V) → YuvImage → JPEG 85% (pantalla) → Bitmap.createScaledBitmap(512px) → JPEG 60% (Bedrock)</li>
+<li><code>convertI420toNV21()</code>: copia Y tal cual, intercala V y U byte a byte</li>
+<li>85% JPEG para mostrar en la app (buena calidad visual)</li>
+<li>60% JPEG + 512px max width para enviar a Bedrock (optimizar tokens y latencia)</li>
+<li>Frame se captura via lambda <code>currentFrameProvider</code> en el momento del transcript</li>
+</ul>
+<hr />
+<h1>SLIDE 14 — Código: Pipeline de imagen (9:30 — 10:30)</h1>
+<p><strong>Contenido:</strong> Imagen con screenshot de código + "85% pantalla / 60% Bedrock"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"El código tiene tres pasos. Primero convierto el formato del video a algo que Android entienda. Después lo comprimo como foto al 85% de calidad — eso es para que se vea bien en la pantalla de la app."</p>
+<p>"Y el tercer paso es el importante: achico la foto y la comprimo más, al 60%, para mandarla a Bedrock. ¿Por qué dos compresiones distintas? Porque tienen propósitos distintos. Una es para que tú veas buena calidad, la otra es para que sea liviana y rápida de enviar."</p>
+<h3>🔧 Info técnica</h3>
+<pre><code class="language-kotlin">// 1. I420 → NV21
+val nv21 = convertI420toNV21(byteArray, width, height)
+// 2. NV21 → JPEG 85% (display)
+YuvImage(nv21, ImageFormat.NV21, w, h, null)
+    .compressToJpeg(Rect(0,0,w,h), 85, stream)
+// 3. Scale + JPEG 60% (Bedrock)
+val scaled = Bitmap.createScaledBitmap(bitmap, 512, ...)
+scaled.compress(Bitmap.CompressFormat.JPEG, 60, stream)
+</code></pre>
+<hr />
+<h1>SLIDE 15 — Desafío 3: Hablando con Bedrock (10:30 — 13:00)</h1>
+<p><strong>Contenido:</strong> Imagen con screenshot de código + "Esto es todo. Bedrock hace el resto."
+<strong>⭐ SLIDE ESTRELLA — IR MUY LENTO</strong></p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Tercer desafío, y el más importante: ya tengo la foto y la pregunta del usuario. ¿Cómo se lo mando a la inteligencia artificial?"</p>
+<p>"Bedrock tiene algo que se llama la Converse API. Piénsenla como un WhatsApp con la IA. Tú le mandas un mensaje que puede tener texto, imágenes, y unas instrucciones de personalidad."</p>
+<p><em>(Señalar el código línea por línea, MUY lento)</em></p>
+<p>"Miren el código. Primero elijo el modelo: Claude Sonnet 4.5. Si mañana quiero usar otro modelo, cambio solo esta línea."</p>
+<p>"Después le doy la personalidad. Le digo: 'Eres Viernes, un asistente inspirado en F.R.I.D.A.Y. de Iron Man. Responde en máximo 2-3 oraciones.' Eso es lo que hace que Viernes sea Viernes y no un chatbot genérico."</p>
+<p>"Y finalmente le mando el contenido: la imagen que capturaron los lentes y la pregunta del usuario. Texto e imagen juntos, en un solo mensaje."</p>
+<p><em>(Pausa larga)</em></p>
+<p>"Esto es TODO el código para hablar con una de las inteligencias artificiales más avanzadas del mundo. No tuve que entrenar ningún modelo. No necesité computadores potentes. No necesité ser experto en machine learning. Bedrock hace el resto."</p>
+<h3>🔧 Info técnica</h3>
+<pre><code class="language-kotlin">val request = ConverseRequest {
+    modelId = &quot;us.anthropic.claude-sonnet-4-5-20250929-v1:0&quot;
+    system = listOf(SystemContentBlock.Text(systemPrompt))
+    messages = listOf(
+        Message {
+            role = ConversationRole.User
+            content = listOf(
+                ContentBlock.Image(ImageBlock {
+                    format = ImageFormat.Jpeg
+                    source = ImageSource.Bytes(imageBytes)
+                }),
+                ContentBlock.Text(prompt)
+            )
+        }
+    )
+    inferenceConfig {
+        maxTokens = 300
+        temperature = 0.7F
+    }
+}
+val response = client.converse(request)
+    .output!!.asMessage().content.first().asText()
+</code></pre>
+<ul>
+<li><code>ConverseRequest</code>: API unificada de Bedrock, funciona igual para cualquier modelo</li>
+<li><code>SystemContentBlock.Text</code>: define personalidad y comportamiento (system prompt)</li>
+<li><code>ContentBlock.Image</code> + <code>ContentBlock.Text</code>: input multimodal en un solo request</li>
+<li><code>maxTokens = 300</code>: limita respuesta a ~2-3 oraciones</li>
+<li><code>temperature = 0.7</code>: balance entre creatividad y coherencia</li>
+<li>Cross-region inference (<code>us.</code> prefix): permite usar el modelo desde cualquier región</li>
+<li>El system prompt cambia según idioma (español/inglés) e incluye fecha/hora actual</li>
+<li>Sin historial de conversación: cada request es stateless (decisión de diseño)</li>
+</ul>
+<hr />
+<h1>SLIDE 16 — Desafío 4: Orquestando todo (13:00 — 14:00)</h1>
+<p><strong>Contenido:</strong> Imagen máquina de estados + "5 estados claros"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Último desafío: tengo cuatro sistemas funcionando — el reconocimiento de voz, la cámara de los lentes, la inteligencia artificial, y la voz que lee las respuestas. ¿Cómo hago para que no se pisen entre sí?"</p>
+<p>"La solución es algo que en programación se llama máquina de estados. Suena complicado pero es simple: la app siempre está en UNO de cinco estados posibles."</p>
+<p><em>(Señalar cada estado en el diagrama)</em></p>
+<p>"IDLE: la app está tranquila, esperando que digas 'Oye Viernes'. LISTENING: te está escuchando, esperando tu pregunta. PROCESSING: mandó todo a Bedrock y está esperando la respuesta. RESPONDING: está leyendo la respuesta en voz alta. Y después vuelve a IDLE."</p>
+<p>"El usuario ve en qué estado está la app en todo momento, con un indicador de colores en la pantalla."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li><code>NovaState</code> enum: IDLE, LISTENING, PROCESSING, RESPONDING, ERROR</li>
+<li><code>NovaUiState</code> data class con: state, transcript, response, sentWithImage, error</li>
+<li>StateFlow + collectAsStateWithLifecycle para UI reactiva en Compose</li>
+<li>El overlay (<code>NovaOverlay.kt</code>) muestra el estado con animaciones y colores</li>
+<li>ERROR → automáticamente vuelve a IDLE con passive listening</li>
+</ul>
+<hr />
+<h1>SLIDE 17 — Código: Estados (14:00 — 15:30)</h1>
+<p><strong>Contenido:</strong> Imagen con código del enum + dos modos de activación</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"El código es un enum — una lista de opciones posibles. La app solo puede estar en una de estas cinco opciones a la vez."</p>
+<p>"Y hay un detalle de diseño que me gusta mucho: hay dos formas de activar a Viernes."</p>
+<p>"Si lo activaste por voz, diciendo 'Oye Viernes', después de responderte vuelve a dormir. Tienes que decir 'Oye Viernes' de nuevo para la siguiente pregunta. Es como Siri."</p>
+<p>"Pero si lo activaste tocando el botón del micrófono, después de responderte sigue escuchando. Puedes hacer varias preguntas seguidas sin repetir 'Oye Viernes'. Es como una conversación."</p>
+<p>"Esto es exactamente lo que van a ver en la demo."</p>
+<h3>🔧 Info técnica</h3>
+<pre><code class="language-kotlin">enum class NovaState { IDLE, LISTENING, PROCESSING, RESPONDING, ERROR }
+</code></pre>
+<ul>
+<li>Flag <code>activatedByVoice</code> controla el comportamiento post-respuesta</li>
+<li>Voz (<code>activatedByVoice = true</code>): TTS onDone → IDLE + startPassiveListening</li>
+<li>Botón (<code>activatedByVoice = false</code>): TTS onDone → LISTENING + startActiveListening</li>
+<li><code>processingJob</code> es un coroutine Job cancelable (dismiss cancela el request a Bedrock)</li>
+<li>Todo corre en <code>viewModelScope</code> con <code>Dispatchers.IO</code> para el request a Bedrock</li>
+</ul>
+<hr />
+<h1>SLIDE 18 — Divider: Demo (15:30 — 15:40)</h1>
+<p><strong>Contenido:</strong> "Demo — Video del flujo completo 🎬"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Ok. Ahora que saben cómo funciona por dentro, les voy a mostrar todo funcionando junto."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Transición de 10 segundos</li>
+</ul>
+<hr />
+<h1>SLIDE 19 — Demo grabada (15:40 — 19:00)</h1>
+<p><strong>Contenido:</strong> 6 pasos + video embebido + "Esto no es un concepto. Esto funciona hoy."</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Ahora ustedes saben qué pasa por dentro. Así que mientras ven el video, fíjense en cada paso."</p>
+<p><em>(Reproducir video)</em></p>
+<p><em>(Narrar mientras se reproduce:)</em>
+"Ahí está en IDLE, esperando... ahora digo 'Oye Viernes' — miren, el indicador cambió a naranja, está escuchando... hago la pregunta... capturó la foto de los lentes... ahora está en amarillo, procesando, Bedrock está analizando la imagen y el texto... y ahí está la respuesta, en verde, el teléfono la lee en voz alta..."</p>
+<p>"Y vuelve a IDLE. Listo para la siguiente pregunta."</p>
+<p><em>(Después del video:)</em>
+"Esto no es un concepto. Esto no es un mockup. Esto funciona hoy, con servicios que cualquiera de ustedes puede usar."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Video debe mostrar: wake word → overlay LISTENING → pregunta → overlay PROCESSING → respuesta → overlay RESPONDING → TTS → vuelta a IDLE</li>
+<li>Idealmente mostrar también el modo botón (conversación continua)</li>
+<li>Duración ideal del video: 2-3 minutos</li>
+</ul>
+<hr />
+<h1>SLIDE 20 — Divider: Lecciones (19:00 — 19:10)</h1>
+<p><strong>Contenido:</strong> "Tres takeaways para llevarse a casa"</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Tres cosas que aprendí construyendo esto."</p>
+<hr />
+<h1>SLIDE 21 — Tres lecciones (19:10 — 21:00)</h1>
+<p><strong>Contenido:</strong> 3 bloques: No reinventes la rueda / Optimiza / Piensa en tu usuario</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Uno: no reinventen la rueda. La detección de voz la resolví con algo que Android ya trae gratis. La inteligencia artificial con Bedrock. La voz que lee las respuestas, también con Android. El 90% de este proyecto es juntar piezas que ya existen. Tu trabajo como desarrollador es ser buen pegamento."</p>
+<p>"Dos: optimicen para el caso real. Yo no mando un video completo a la IA. Mando una sola foto de 30 kilobytes. No pido respuestas de 2000 palabras. Pido 2-3 oraciones. Cada decisión de optimización hace que sea más rápido y más barato."</p>
+<p>"Tres: piensen en su usuario desde el día uno. Hice la app bilingüe desde el inicio — español e inglés. Incluí variantes de pronunciación del wake word porque la gente no habla perfecto. Agregué dos modos de activación para distintos contextos. Son pequeños detalles que hacen la diferencia entre un demo y un producto."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Latencia end-to-end: 2-3 segundos</li>
+<li>Costo por interacción: ~$0.01-0.02 USD</li>
+<li>Consumo batería: ~15%/hora</li>
+<li>APK size: ~12MB (sin contar dependencias del SDK de Meta)</li>
+<li>Precisión wake word: ~95% en ambientes silenciosos</li>
+</ul>
+<hr />
+<h1>SLIDE 22 — Recursos (21:00 — 22:00)</h1>
+<p><strong>Contenido:</strong> Dos columnas. Repo + web + Bedrock | Links de docs + hashtags</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Todo el código es open source. El repositorio en GitHub tiene instrucciones paso a paso para que lo repliquen. Bedrock tiene un tier gratuito para empezar a experimentar."</p>
+<p>"Y si quieren hacer algo parecido pero no tienen los lentes: no los necesitan. Pueden usar la cámara del teléfono. El flujo es exactamente el mismo. Los lentes son el factor wow, pero la arquitectura funciona con cualquier cámara."</p>
+<h3>🔧 Info técnica</h3>
+<ul>
+<li>Repo: github.com/fernandosilvot/aws-bedrock-meta-glasses</li>
+<li>Blog: dev.to/aws-espanol/crea-tu-asistente-personal-en-los-meta-glasses-4nen</li>
+<li>Bedrock docs: docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html</li>
+<li>Meta DAT SDK: wearables.developer.meta.com/docs/reference/android/dat/0.4</li>
+</ul>
+<hr />
+<h1>SLIDE 23 — ¡Gracias! (22:00 — 22:30)</h1>
+<p><strong>Contenido:</strong> "¡Gracias! 🙌" + contacto</p>
+<h3>🎤 Guion para principiantes</h3>
+<p>"Eso es todo. Muchas gracias por su tiempo. Si quieren ver los lentes de cerca, probar la app, o tienen preguntas, estoy acá. ¡Gracias!"</p>
+<p><em>(Aplausos → Q&amp;A 5 minutos)</em></p>
+<hr />
+<h1>RESPUESTAS PARA Q&amp;A</h1>
+<p><strong>"¿Cuánto cuesta usar Bedrock?"</strong>
+Para principiantes: "Cada vez que le hago una pregunta con foto cuesta como 1 o 2 centavos de dólar. Si hago 100 preguntas al día, son 1 a 2 dólares al mes. Y hay un tier gratuito para empezar."
+Técnico: Input ~$3/M tokens, output ~$15/M tokens. Una imagen de 30KB ≈ 1000 tokens ≈ $0.003. Con maxTokens=300, cada request cuesta ~$0.01-0.02.</p>
+<p><strong>"¿Por qué no usar Meta AI?"</strong>
+Para principiantes: "Meta AI solo funciona en inglés y en algunos países. No puedo elegir qué modelo usa ni controlar mis datos. Con Bedrock yo elijo todo."
+Técnico: Meta AI no está disponible en LATAM, no expone API para customización, no permite elegir modelo ni ajustar system prompts.</p>
+<p><strong>"¿Se puede hacer sin los lentes?"</strong>
+Para principiantes: "Sí, pueden usar la cámara del teléfono. El flujo es el mismo: capturar foto, mandar a Bedrock, recibir respuesta."
+Técnico: Reemplazar <code>StreamViewModel.videoFrame</code> por <code>CameraX</code> capture. El <code>BedrockClient</code> y <code>NovaViewModel</code> quedan idénticos.</p>
+<p><strong>"¿Cuánto se demora en responder?"</strong>
+Para principiantes: "Entre 2 y 3 segundos desde que terminas de hablar hasta que escuchas la respuesta."
+Técnico: ~500ms wake word detection + ~200ms frame capture + ~100ms image compression + ~1500-2000ms Bedrock inference + ~200ms TTS init.</p>
+<p><strong>"¿Qué pasa si no hay internet?"</strong>
+Para principiantes: "No funciona sin internet. Toda la inteligencia está en la nube. Pero eso es intencional: mantiene la app liviana."
+Técnico: Toda la inferencia es server-side via Bedrock. No hay modelo on-device. Trade-off: latencia de red vs complejidad y tamaño del APK.</p></body></html>
